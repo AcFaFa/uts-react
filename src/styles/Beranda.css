@@ -1,0 +1,50 @@
+.card-img {
+  width: 10rem;
+}
+
+.wrapper-product {
+  max-width: 100%;
+  display: flex;
+  gap: 15px;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.wrapper-action {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.wrapper-cari {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.wrapper-cari label {
+  white-space: nowrap;
+}
+
+.btn-pagination {
+  padding: 0.5rem;
+  background: skyblue;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.btn-pagination:hover {
+  cursor: pointer;
+}
+
+.wrapper-pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
