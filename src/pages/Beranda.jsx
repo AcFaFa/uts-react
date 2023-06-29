@@ -99,11 +99,11 @@ const Beranda = () => {
   const [maxPrice, setMaxPrice] = useState(Infinity);
   const [page, setPage] = useState(1);
   const [ipt, setIpt] = useState({
-    id: 11,
-    name: "",
-    harga: "",
-    link: "",
-    kategori: "",
+    id: 13,
+    name: "Handphone",
+    price: "1000000",
+    image: "/ipad_pro.jpg",
+    kategori: "Android",
   });
   // menginisialisai useNavigate agar bisa digunakan
   const navigate = useNavigate();
@@ -139,7 +139,23 @@ const Beranda = () => {
     <div>
       <div className="wrapper-action">
         <div className="add">
-          <button>Add Product</button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setProducts([
+                ...products,
+                {
+                  ...ipt,
+                },
+              ]);
+              setIpt({
+                ...ipt,
+                id: ipt.id + 1,
+              });
+            }}
+          >
+            Add Product
+          </button>
         </div>
         <div className="wrapper-cari">
           <label>Cari Produk</label>
